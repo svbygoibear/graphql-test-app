@@ -50,3 +50,6 @@ TBA
 
 [Why and when to use GraphQL](https://dzone.com/articles/why-and-when-to-use-graphql-1)
 [You Don't Need GraphQL](https://dzone.com/articles/you-dont-need-graphql)
+[GraphQL for C#](https://graphql.org/code/#c-net)
+[HotChocolate Package](https://github.com/ChilliCream/hotchocolate)
+[Consuming a GraphQL API from React](https://developer.okta.com/blog/2020/11/23/quick-graphql-react-app)
