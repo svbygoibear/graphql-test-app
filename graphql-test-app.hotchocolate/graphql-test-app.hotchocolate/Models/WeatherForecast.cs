@@ -1,4 +1,4 @@
-namespace graphql_test_app.hotchocolate
+namespace graphql_test_app.hotchocolate.Models
 {
     public class WeatherForecast
     {
