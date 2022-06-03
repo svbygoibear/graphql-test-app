@@ -19,9 +19,10 @@
 
 ### Hot Chocolate
 
-[Hot Chocolate Getting Started](https://chillicream.com/docs/hotchocolate/get-started)
+[Hot Chocolate](https://github.com/ChilliCream/hotchocolate) is the base for creating a GraphQL server, and there are various approaches to add it to a project;
 
-[Code First Example](https://www.learmoreseekmore.com/2021/03/overview-hotchocolate-graphql-implementation-in-pure-code-first-approach.html)
+- [Hot Chocolate Getting Started](https://chillicream.com/docs/hotchocolate/get-started)
+- [Code First Example](https://www.learmoreseekmore.com/2021/03/overview-hotchocolate-graphql-implementation-in-pure-code-first-approach.html)
 
 ### Banana Cake Pop
 
@@ -35,6 +36,8 @@ This sample application makes use of (and requires that you have it running on y
 
 - The latest .NET 6 (LTS)
 - Docker (and docker client)
+
+You can either use Docker to run this app in Visual Studio, or make use of IIS if you simply want to debug/have a look at it locally.
 
 ### Code Setup
 
