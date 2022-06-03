@@ -63,7 +63,7 @@ $HOME
         |_ Models
         |_ Service
         |_ IService
-            |_ go-deps-with-glide
+            |_ etc.
 ```
 
 #### Query Class
@@ -71,11 +71,11 @@ $HOME
 With `Hot Chocolate` you're only allowed to register 1 query per project, but you can get around this to logically separate out queries by decorating the query class with `ExtendObjectType`:
 
 ```
-    [ExtendObjectType(Name = "Query")]
-    public class WeatherForecastQuery
-    {
-        ...
-    }
+[ExtendObjectType(Name = "Query")]
+public class WeatherForecastQuery
+{
+    ...
+}
 ```
 
 In our query class we make use of the service we've made to return a query - in this case it would be `WeatherForecasts` that is exposed as a query - which is build from the `GetForecasts` method.
@@ -112,12 +112,29 @@ And that is it! You can define a custom root/schema but this is the basic buildi
 
 ### Looking at your API
 
-[Local Host](https://localhost:44370/graphql/)
+For this project, when running it, it will automatically open up the swagger docs locally. To see your GraphQL queries and to access the `Banana Cake Pop` UI in the browser, locally, you can navigate to: [Local Host](https://localhost:44370/graphql/)
 
-### Other Areas
+Once you have this loaded, you can click on `Browse schema` to view the exposed Schemas. In this project's case, that would be the `WeatherForecasts` query that we created earlier.
+<img src="https://raw.githubusercontent.com/svbygoibear/graphql-test-app/master/img/banana-cake-pop-landing-page.PNG" alt="banana-cake-pop-landing-page.PNG" width="250">
 
-The majority of the focus in this project is on
+## Other Areas
 
-## Entity Framework
+The majority of the focus in this project is on the API side of things, but you can use GraphQL with Entity Framework to build from `queries` that are pre-defined.
 
-[GraphQL Entity Framework](https://chillicream.com/docs/hotchocolate/integrations/entity-framework)
+### Pagination
+
+This is something that you get out of the box with `GraphQL` (the impact on Entity is something that I still need to look into), but it does give you an easy way to achieve pagination without adding any additional logic. [Pagination GraphQL](https://graphql.org/learn/pagination/)
+
+### Entity Framework
+
+You can use EF by working with the `DbContext`, but you need to ensure that resolvers do not access the same scoped `DbContext` instance in parallel, which in turn means that you have to inject it using `ServiceKind.Synchronized`. As part of a future extension on this project, we'll include examples of this.
+
+- [GraphQL Entity Framework](https://chillicream.com/docs/hotchocolate/integrations/entity-framework)
+
+### React and GraphQL
+
+The easiest ways to fetch data in React from GraphQL is to make use of a GraphQL compatible client. One such example is [Apollo Client](https://www.apollographql.com/). Not only can you use it to fetch remote data with GraphQL, but it allows us to manage data locally, both through an internal cache as well as an entire state management API.
+
+You do not need to use a client either, it is possible to define this manually in just plain React, but it does make it easier. For more info on different libraries and frameworks that can be used, have a look here:
+
+- [5 Ways to Fetch Data: React-GraphQL](https://www.freecodecamp.org/news/5-ways-to-fetch-data-react-graphql/)
