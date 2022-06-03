@@ -9,7 +9,7 @@ namespace graphql_test_app.hotchocolate.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private readonly ILogger<WeatherForecastController> _logger;
-        private IWeatherForecastService _weatherForecastService = null;
+        private readonly IWeatherForecastService _weatherForecastService;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger, IWeatherForecastService weatherForecastService)
         {
@@ -17,7 +17,7 @@ namespace graphql_test_app.hotchocolate.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "weatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
             return _weatherForecastService.GetForecasts();

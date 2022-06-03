@@ -2,11 +2,12 @@
 
 namespace graphql_test_app.hotchocolate.Models
 {
-    public class Query
+    [ExtendObjectType(Name = "Query")]
+    public class WeatherForecastQuery
     {
-        private IWeatherForecastService _weatherForecastService = null;
+        private readonly IWeatherForecastService _weatherForecastService;
 
-        public Query(IWeatherForecastService weatherForecastService)
+        public WeatherForecastQuery(IWeatherForecastService weatherForecastService)
         {
             _weatherForecastService = weatherForecastService;
         }

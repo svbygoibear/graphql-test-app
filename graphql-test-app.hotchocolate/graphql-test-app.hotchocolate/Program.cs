@@ -13,16 +13,12 @@ builder.Services.AddSwaggerGen();
 // Adds GraphQL Queries
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType(d => d.Name("Query"))
+    .AddTypeExtension<WeatherForecastQuery>();
 
 // Add a custom scoped service.
 builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
-builder.Services.AddScoped<Query>();
-//builder.Services.AddGraphQL(p => SchemaBuilder.New().AddServices(p)
-//    .AddType<WeatherForecast>()
-//    .AddQueryType<Query>()
-//    .Create()
-//);
+builder.Services.AddScoped<WeatherForecastQuery>();
 
 var app = builder.Build();
 
