@@ -44,7 +44,11 @@ If you thought I was not going to copy-and-paste some stuff here, then you were 
 
 ## Setting up
 
-TBA
+### Hot Chocolate Project
+
+Here we look at using [Hot Chocolate](https://github.com/ChilliCream/hotchocolate) to make use of [GraphQL](https://graphql.org/) in .NET. This is a simple, small API project using .NET 6 and illustrates the use of a controller as well as making use of [GraphQL](https://graphql.org/) to interact with the `weather` data.
+
+You can find the project for this [here](https://github.com/svbygoibear/graphql-test-app/tree/main/graphql-test-app.hotchocolate).
 
 ## More reading
 
