@@ -114,8 +114,17 @@ And that is it! You can define a custom root/schema but this is the basic buildi
 
 For this project, when running it, it will automatically open up the swagger docs locally. To see your GraphQL queries and to access the `Banana Cake Pop` UI in the browser, locally, you can navigate to: [Local Host](https://localhost:44370/graphql/)
 
+#### Browse Schema
+
 Once you have this loaded, you can click on `Browse schema` to view the exposed Schemas. In this project's case, that would be the `WeatherForecasts` query that we created earlier.
+
 <img src="https://raw.githubusercontent.com/svbygoibear/graphql-test-app/master/img/banana-cake-pop-landing-page.PNG" alt="banana-cake-pop-landing-page.PNG" width="250">
+
+#### Sample Query
+
+Now you're able to see all the queries and execute operations against them, in this example I am using the `weatherForecasts` query - but instead of returning the whole schema, I ask to return only 2 properties of the object;
+
+<img src="https://raw.githubusercontent.com/svbygoibear/graphql-test-app/master/img/banana-cake-pop-sample-query.PNG" alt="banana-cake-pop-sample-query.PNG" width="250">
 
 ## Other Areas
 
