@@ -1,3 +1,14 @@
+<h1 align="center">
+  <a href="https://raw.githubusercontent.com/svbygoibear/graphql-test-app/master/img/graphql-hotchocolate.jpg"><img src="https://raw.githubusercontent.com/svbygoibear/graphql-test-app/master/img/graphql-hotchocolate.jpg" alt="graphql-test-app.hotchocolate" width="250"></a>
+  <br>
+  graphql-test-app.hotchocolate
+  <br>
+</h1>
+
+<h4 align="center">Implementing GraphQL in C# Using Hot Chocolate</h4>
+<br>
+<br>
+
 ##
 
 [Hot Chocolate Getting Started](https://chillicream.com/docs/hotchocolate/get-started)
