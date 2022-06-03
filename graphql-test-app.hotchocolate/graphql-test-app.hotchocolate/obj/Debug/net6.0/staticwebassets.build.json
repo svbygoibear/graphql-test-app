@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZR6gUiffdaLFSg5aow8dwBGb/fJ++YIHFJsnihv3LLk=",
+  "Source": "graphql-test-app.hotchocolate",
+  "BasePath": "_content/graphql-test-app.hotchocolate",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

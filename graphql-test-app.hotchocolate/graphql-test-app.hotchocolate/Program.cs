@@ -1,4 +1,6 @@
+using graphql_test_app.hotchocolate.IService;
 using graphql_test_app.hotchocolate.Models;
+using graphql_test_app.hotchocolate.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +16,13 @@ builder.Services
     .AddQueryType<Query>();
 
 // Add a custom scoped service.
-builder.Services.AddScoped<ITodoRepository, TodoRepository>();
+builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+builder.Services.AddScoped<Query>();
+//builder.Services.AddGraphQL(p => SchemaBuilder.New().AddServices(p)
+//    .AddType<WeatherForecast>()
+//    .AddQueryType<Query>()
+//    .Create()
+//);
 
 var app = builder.Build();
 
