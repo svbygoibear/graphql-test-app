@@ -15,7 +15,7 @@ Ah yes, the age old battle... REST VS GraphQL! Well, to be honest, both have the
 
 Either you sit with a whole bunch of round-trips to retrieve data, or you create a specialized endpoint which in a bigger team can sometimes be mutated/changed to the point of being inefficient for its original use. GraphQL attempts to solve this problem by eliminating over-fetching data from the API and gives a simpler way of nesting objects in queries.
 
-More info can be found at this ![Introduction to GraphQL](https://youtu.be/anW5Qpuh5kI) video.
+More info can be found at this [Introduction to GraphQL](https://youtu.be/anW5Qpuh5kI) video.
 
 ## What is GraphQL?
 
